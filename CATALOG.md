@@ -9,6 +9,7 @@ and their licence. We do not re-host anyone's work here.
 | --- | --- |
 | `duce-brand` | The Duce Atelier brand system: exact colours, type, the signature diagonal, and the house writing voice (including the no-em-dash rule). |
 | `duce-10k-website` | The exact setup to build a premium, agency-quality website with Claude Code: the four-layer stack (Claude Code, Motion, a design system, 21st.dev), the design taste, the build order, and the kickoff prompt. |
+| `duce-frontend` | A premium web design system: mood and dark mode, typography as the system, whitespace, the five-point hero, and the 60-30-10 colour system with accessible contrast. |
 
 More Duce skills land here over time (Supabase patterns, Paystack conventions, deploy checklist).
 
