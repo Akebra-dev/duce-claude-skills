@@ -16,6 +16,31 @@ order. Follow the four layers, the taste rules, and the build order every time.
 
 If the project is a Duce Atelier project, also apply the `duce-brand` skill.
 
+## Preflight, always confirm before you build
+
+Do not start building until the setup is confirmed. Run this check every time,
+and tell the user what is ready and what is missing.
+
+1. **Confirm the companion skills are installed and active, then use them:**
+   - `frontend-design`, for the design direction and distinctive choices.
+   - `ui-ux-pro-max`, for taste: styles, colour palettes, and font pairings.
+   - `better-ui`, for impeccable polish and micro-detail.
+   - `duce-brand`, if this is a Duce Atelier project.
+   If any is missing, say so and install it before continuing.
+2. **Confirm the MCP servers are connected, then use them:**
+   - **Figma MCP**, to pull the real design when one exists: read frames, layout,
+     and tokens (`get_figma_data`), and export assets (`download_figma_images`).
+     If a Figma file is the source of truth, read it before writing any UI.
+   - **Playwright MCP**, to open the built site in a real browser and check it:
+     verify the layout and the responsive breakpoints, take screenshots to review,
+     and fix what looks off.
+   If either is not connected, tell the user how to connect it before building.
+3. **Confirm the skill is current.** If there is an update source, pull the latest
+   version of this skill before relying on it.
+4. **Confirm the brief with the user** (subject, sections, brand) before you start.
+
+Only build once all four are confirmed.
+
 ## The four layers, set these up first
 
 1. **Claude Code, the builder.** Runs locally, reads the whole project, edits
@@ -83,10 +108,13 @@ Never ship a plain, static hero.
 ## Build order, section by section
 
 1. Set up the project structure first: Next.js (App Router), Tailwind, Motion.
-2. Lay down the design tokens before any UI.
+2. If there is a Figma design, pull it with the Figma MCP and match it. Lay down
+   the design tokens (from Figma or the brand) before any UI.
 3. Build one section at a time: navbar, hero, features, social proof, pricing,
    FAQ, footer. Show each section before moving to the next.
-4. Iterate. First output is never final. Refine spacing, contrast, and motion.
+4. Review in a real browser with the Playwright MCP: open each section, check the
+   responsive breakpoints, screenshot it, and fix what looks off. First output is
+   never final, refine spacing, contrast, and motion.
 5. Performance pass at the end: lazy-load images, optimise fonts, aim for a
    Lighthouse score of 90+.
 
