@@ -30,7 +30,13 @@ If the project is a Duce Atelier project, also apply the `duce-brand` skill.
    system instead of random Tailwind guesses.
 4. **A component library, the shortcut layer.** 21st.dev for production-ready
    blocks (heroes, pricing, testimonials, navbars, footers). Adapt every block to
-   the design tokens and real copy, never paste it raw.
+   the design tokens and real copy, never paste it raw. For hero backgrounds
+   specifically, use **particles.casberry.in**, a gallery of ready particle and
+   noise effects. Browse it, find a noise or particle background, and adapt it to
+   the brand colours. For uncommon, characterful components that lift a page above
+   the generic, pull from **Skiper UI** (skiper-ui.com) and **Vengeance UI**
+   (vengenceui.com), and sort for the unique elements, the ones other libraries do
+   not have, then adapt them to the tokens.
 
 ## Design taste, never skip this
 
@@ -46,6 +52,24 @@ If the project is a Duce Atelier project, also apply the `duce-brand` skill.
 - **Avoid the generic AI look.** No centred everything, no `rounded-lg` on every
   box, no purple-to-blue gradient hero, no emoji as icons. Make deliberate choices
   for this specific subject.
+
+## Make the hero stylish, always
+
+The hero is the thesis of the whole page, so spend your best effort there. A flat
+hero makes the entire site feel cheap. Every hero gets:
+
+- **A striking background, never a flat colour.** Layer a subtle noise or grain
+  texture, a soft drifting glow or aurora, and a sense of depth. For ready
+  particle and noise backgrounds, use **particles.casberry.in**: find a noise or
+  particle effect and adapt it to the brand colours.
+- **Bold editorial type.** One large, confident headline with tight tracking, set
+  off centre. Timid, perfectly centred heroes read as generic.
+- **One strong motion moment on load** (a rise or reveal), plus gentle ambient
+  motion (a drifting glow, floating particles). Tasteful, and it respects reduced
+  motion.
+- **The single accent used once**, on the CTA or one word of the headline.
+
+Never ship a plain, static hero.
 
 ## Animation with Motion
 
