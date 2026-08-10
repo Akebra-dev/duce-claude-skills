@@ -8,6 +8,7 @@ and their licence. We do not re-host anyone's work here.
 | Skill | What it does |
 | --- | --- |
 | `duce-brand` | The Duce Atelier brand system: exact colours, type, the signature diagonal, and the house writing voice (including the no-em-dash rule). |
+| `duce-10k-website` | The exact setup to build a premium, agency-quality website with Claude Code: the four-layer stack (Claude Code, Motion, a design system, 21st.dev), the design taste, the build order, and the kickoff prompt. |
 
 More Duce skills land here over time (Supabase patterns, Paystack conventions, deploy checklist).
 
